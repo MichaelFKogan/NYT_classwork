@@ -4,20 +4,70 @@
 	<title>
 	</title>
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+	
 	<link rel="stylesheet" type="text/css" href="https://bootswatch.com/yeti/bootstrap.min.css">
+	
 	<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
 
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 </head>
 <body>
 
-    <form id="submitQuery">
-      <p><input type="text" id="queryString"></p>
-      <button id="submit">Add Search Item</button>
-    </form>
 
   <div class="container">
 
-  </div>	
+<div class="jumbotron text-center"><h1>New York Times Search</h1>
+</div>
+
+<div class="row">
+		<div class="col-sm-12">
+
+    <form>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Search Term:</label>
+    <input type="text" class="form-control" id="searchTerm" aria-describedby="emailHelp" placeholder="">
+   
+  </div>
+  
+  <div class="form-group">
+    <label for="exampleSelect1">Number of Records to Retrieve:</label>
+    <select class="form-control" id="exampleSelect1">
+      <option>1</option>
+      <option>5</option>
+      <option>10</option>
+    </select>
+  </div>
+
+   <div class="form-group">
+    <label for="exampleInputPassword1">Start Year (Optional):</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="">
+  </div>
+
+     <div class="form-group">
+    <label for="exampleInputPassword1">End Year (Optional):</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="">
+  </div>
+
+  <button type="submit" class="btn btn-primary" id=searchButton>Search</button>
+</form>
+
+
+		</div> <!-- Close column -->
+	</div><!-- Close row -->
+
+<br>
+
+<div class="panel panel-info">
+ <div class="panel-heading">
+   <h3 class="panel-title">Panel info</h3>
+ </div>
+ <div class="panel-body" id="content">
+   Panel content
+ </div>
+</div>
+
+    
+  </div>	<!-- Close Container -->
 	<script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="assets/js/app.js"></script>
 
